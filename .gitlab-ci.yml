@@ -1,6 +1,7 @@
 before_script:
     - yum install -y glibc-headers
     - yum install -y glibc-devel
+    - source ./SetupEnv.sh
 
 build:
     script:
