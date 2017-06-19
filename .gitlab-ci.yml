@@ -18,3 +18,9 @@ four:
       - $(root-config --cxx) $(root-config --cflags) main.cc -c -o main.o
       - $(root-config --cxx) $(root-config --libs) main.o -o main
       - ./main
+
+five:
+    script:
+      - $(root-config --cxx) $(root-config --cflags) main2.cc -c -o main2.o
+      - $(root-config --cxx) $(root-config --libs) main2.o -o main2
+      - ./main2
