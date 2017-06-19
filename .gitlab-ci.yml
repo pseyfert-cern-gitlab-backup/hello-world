@@ -1,5 +1,5 @@
 before_script:
-  - yum install -y libSM
+  - yum install -y libSM libX11-devel
   - source /cvmfs/sft.cern.ch/lcg/views/LCG_88/x86_64-slc6-gcc49-opt/setup.sh
 
 build:
