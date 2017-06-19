@@ -1,8 +1,6 @@
 before_script:
-    - yum install -y glibc-headers
-    - yum install -y glibc-devel
-    - source ./SetupEnv.sh
+  - source /cvmfs/sft.cern.ch/lcg/views/LCG_88/x86_64-centos7-gcc62-opt/setup.sh
 
 build:
     script:
-      - make
+      - root -l -b -q
