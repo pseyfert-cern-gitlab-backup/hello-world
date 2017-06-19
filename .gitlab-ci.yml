@@ -3,5 +3,4 @@ before_script:
 
 build:
     script:
-      - uname -a
-      - root -l -b -q
+      - root.exe -l -b -q
