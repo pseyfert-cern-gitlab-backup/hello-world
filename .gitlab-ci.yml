@@ -21,6 +21,6 @@ four:
 
 five:
     script:
-      - $(root-config --cxx) $(root-config --cflags) main2.cc -Wall -Wextra -g -std=c++11 -c -o main2.o
+      - $(root-config --cxx) $(root-config --cflags) main2.cc -Wall -Wextra -g -std=c++14 -c -o main2.o
       - $(root-config --cxx) $(root-config --libs) main2.o -o main2
       - ./main2
