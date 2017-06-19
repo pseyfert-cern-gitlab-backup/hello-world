@@ -12,3 +12,9 @@ two:
 three:
     script:
       - root.exe -l -b -q
+
+four:
+    script:
+      - $(root-config --cxx) $(root-config --cflags) main.cc -c -o main.o
+      - $(root-config --cxx) $(root-config --libs) main.o -o main
+      - ./main
