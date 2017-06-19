@@ -4,4 +4,4 @@ before_script:
 
 build:
     script:
-      - root -l -b -q
+      - root -l -b -q mini.C
